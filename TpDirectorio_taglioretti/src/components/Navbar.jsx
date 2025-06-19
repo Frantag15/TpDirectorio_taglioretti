@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav style={{ padding: "1rem", backgroundColor: "#cfe3ff" }}>
-      <Link to="/">Inicio</Link> |{" "}
-      <Link to="/estadisticas">Estadísticas</Link> |{" "}
+    <nav className="navbar">
+      <Link to="/">Inicio</Link>
+      <Link to="/estadisticas">Estadísticas</Link>
       <Link to="/contacto">Contacto</Link>
     </nav>
   );

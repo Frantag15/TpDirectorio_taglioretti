@@ -1,0 +1,15 @@
+/* Contacto.css */
+.contacto-container {
+    padding: 2rem;
+    background-color: #f0fff3;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  .contacto-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  

@@ -1,4 +1,5 @@
 import personas from "../data/personas.json";
+import "./Estadisticas.css";
 
 export default function Estadisticas() {
   const total = personas.length;
@@ -7,14 +8,25 @@ export default function Estadisticas() {
   const menorEdad = Math.min(...personas.map(p => p.edad));
   const promedio = (personas.reduce((suma, p) => suma + p.edad, 0) / total).toFixed(1);
 
+  const stats = [
+    { label: "Total de personas", value: total },
+    { label: "Personas mayores de 35", value: mayores35.length },
+    { label: "Edad máxima", value: mayorEdad },
+    { label: "Edad mínima", value: menorEdad },
+    { label: "Promedio de edad", value: promedio }
+  ];
+
   return (
-    <div>
+    <div className="estadisticas-container">
       <h2>Estadísticas</h2>
-      <p>Total de personas: {total}</p>
-      <p>Personas mayores de 35: {mayores35.length}</p>
-      <p>Edad máxima: {mayorEdad}</p>
-      <p>Edad mínima: {menorEdad}</p>
-      <p>Promedio de edad: {promedio}</p>
+      <div className="estadisticas-scroll">
+        {stats.map((stat, index) => (
+          <div className="stat-card" key={index}>
+            <h3>{stat.label}</h3>
+            <p>{stat.value}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

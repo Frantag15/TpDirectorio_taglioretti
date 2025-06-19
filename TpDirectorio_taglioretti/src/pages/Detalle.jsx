@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import personas from "../data/personas.json";
+import "./Detalle.css";
 
 export default function Detalle() {
   const { id } = useParams();
@@ -8,7 +9,7 @@ export default function Detalle() {
   if (!persona) return <h2>Persona no encontrada</h2>;
 
   return (
-    <div>
+    <div className = "detalle-container">
       <h2>Detalle de {persona.nombre}</h2>
       <p>Nombre: {persona.nombre} {persona.apellido}</p>
       <p>Edad: {persona.edad} - {persona.edad < 18 ? "Menor de edad" : "Mayor de edad"}</p>
