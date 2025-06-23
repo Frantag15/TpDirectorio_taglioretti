@@ -8,15 +8,16 @@
   width: 100%;
   max-width: 800px;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #3d8d79;
   text-align: center;
   box-sizing: border-box;
+  border-radius: 5%;
 }
 
 .estadisticas-container h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: #222;
+  color: #ffffff;
 }
 
 .estadisticas-scroll {
