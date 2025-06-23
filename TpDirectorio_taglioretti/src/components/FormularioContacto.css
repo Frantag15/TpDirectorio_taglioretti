@@ -1,20 +1,24 @@
 .formulario {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    margin: 0;
     gap: 0.5rem;
     max-width: 400px;
     padding: 1rem;
-    background-color: #cdffd8;
+    background-color: #3d8d79;
     border-radius: 10px;
+    box-shadow: unset;
   }
   
   .formulario input {
+    width: 96%;
     padding: 0.5rem;
     border: 1px solid #aaa;
     border-radius: 5px;
   }
   
-  .formulario button {
+  .formulario button {  
     background-color: #94b9ff;
     border: none;
     padding: 0.5rem;
@@ -22,4 +26,14 @@
     font-weight: bold;
     cursor: pointer;
   }
-  
+    .mensaje-error {
+      color: #802825; /* rojo fuerte */
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    
+    .mensaje-exito {
+      color: #ffffff; /* blanco */
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }

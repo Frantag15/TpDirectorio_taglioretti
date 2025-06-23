@@ -1,20 +1,54 @@
-/* Detalle.css */
 .detalle-container {
-    background-color: #fef9e7;
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .detalle-container h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .detalle-container p {
-    margin-bottom: 0.5rem;
-  }
-  
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.detalle-foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #94b9ff;
+}
+
+.detalle-info {
+  flex: 1;
+}
+
+.detalle-info h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.detalle-info p {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.detalle-email {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 12px;
+  gap: 0.5rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.email-icon {
+  font-size: 1.5rem;
+  color: #555;
+}

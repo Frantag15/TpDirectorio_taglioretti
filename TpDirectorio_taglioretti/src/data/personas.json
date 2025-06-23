@@ -1,6 +1,6 @@
 [
-    { "id": 1, "nombre": "Ana", "apellido": "Gómez", "edad": 20, "email": "ana@gmail.com" },
-    { "id": 2, "nombre": "Luis", "apellido": "Pérez", "edad": 42, "email": "luis@gmail.com" },
-    { "id": 3, "nombre": "Lucía", "apellido": "Fernández", "edad": 15, "email": "lucia@gmail.com" }
+    { "id": 1, "nombre": "Ana", "foto": "ana.jpg","apellido":"Gómez", "edad": 20, "email": "ana@gmail.com" },
+    { "id": 2, "nombre": "Luis", "foto": "luis.jpg", "apellido": "Pérez", "edad": 42, "email": "luis@gmail.com" },
+    { "id": 3, "nombre": "Lucía", "foto": "lucia.jpg", "apellido": "Fernández", "edad": 15, "email": "lucia@gmail.com" }
   ]
   

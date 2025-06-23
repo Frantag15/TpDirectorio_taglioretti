@@ -14,6 +14,7 @@ export default function FormularioContacto() {
     if (!nombre || !apellido || !email || !edad) return setMensaje("⚠️ Todos los campos son obligatorios.");
     if (!email.includes("@") || !email.includes(".")) return setMensaje("⚠️ Email inválido.");
     if (isNaN(edad) || edad <= 0) return setMensaje("⚠️ Edad debe ser mayor a 0.");
+    if(!isNaN(nombre) || !isNaN(apellido)) return setMensaje("⚠️Formato de nombre/apellido incorrecto");
 
     setMensaje("✅ Formulario enviado con éxito.");
     setForm({ nombre: "", apellido: "", email: "", edad: "" });
@@ -26,7 +27,7 @@ export default function FormularioContacto() {
       <input name="email" value={form.email} onChange={handleChange} placeholder="Email" />
       <input name="edad" value={form.edad} onChange={handleChange} placeholder="Edad" />
       <button type="submit">Enviar</button>
-      <p>{mensaje}</p>
+      <p className={mensaje.includes("éxito") ? "mensaje-exito" : mensaje ? "mensaje-error" : ""}> {mensaje} </p>
     </form>
   );
 }
