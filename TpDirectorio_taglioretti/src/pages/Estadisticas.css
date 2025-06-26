@@ -34,7 +34,7 @@
   opacity: 0;
   transform: translateY(50px);
   animation: fadeInUp 0.8s ease forwards;
-  background: linear-gradient(to right, #94b9ff, #cdffd8);
+  background: white;
   padding: 2rem;
   border-radius: 16px;
   width: 100%;
